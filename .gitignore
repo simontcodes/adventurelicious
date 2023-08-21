@@ -1,0 +1,30 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build or compiled files
+dist/
+build/
+*.min.css
+*.min.js
+
+# Ignore temporary files
+*.log
+*.tmp
+
+color_pallete.txt
+
+# Ignore project-specific environment/config files
+config.js
+.env
+
+# Ignore any sensitive or private information
+secrets.txt
+private.key
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/IDE specific files
+.idea/
+.vscode/
