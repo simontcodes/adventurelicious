@@ -392,15 +392,11 @@
                     ? (t.closest(".image-parallax-block")
                         ? ((n = t.closest(
                             ".image-parallax-block"
-                          )).classList.add("animated-bg", "loading", "dark"),
+                          )).classList.add("animated-bg", "loading"),
                           n.classList.remove("lazy"),
                           (t.onload = function () {
                             return (
-                              n.classList.remove(
-                                "loading",
-                                "animated-bg",
-                                "dark"
-                              ),
+                              n.classList.remove("loading", "animated-bg"),
                               n.classList.add("loaded"),
                               (t.onload = null)
                             );
@@ -662,14 +658,14 @@
           return (t.onload = function () {
             if ((e = t.closest(".animated-bg.loading")))
               return (
-                e.classList.remove("loading", "animated-bg", "dark"),
+                e.classList.remove("loading", "animated-bg"),
                 e.classList.add("loaded"),
                 (e.onload = null)
               );
           });
         if ((e = t.closest(".animated-bg.loading")))
           return (
-            e.classList.remove("loading", "animated-bg", "dark"),
+            e.classList.remove("loading", "animated-bg"),
             e.classList.add("loaded")
           );
       }
