@@ -188,14 +188,14 @@
             c.push(n), s();
           });
       })(addEventListener, removeEventListener);
-      var t = localStorage.getItem("theme")
-        ? localStorage.getItem("theme")
-        : null;
-      t
-        ? document.documentElement.setAttribute("data-theme", t)
-        : window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches &&
-          document.documentElement.setAttribute("data-theme", "dark");
+      // var t = localStorage.getItem("theme")
+      //   ? localStorage.getItem("theme")
+      //   : null;
+      // t
+      //   ? document.documentElement.setAttribute("data-theme", t)
+      //   : window.matchMedia &&
+      //     window.matchMedia("(prefers-color-scheme: dark)").matches &&
+      //     document.documentElement.setAttribute("data-theme", "dark");
     </script>
     <script>
       document.documentElement.style.setProperty(
