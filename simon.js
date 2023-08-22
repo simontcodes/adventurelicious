@@ -1,4 +1,5 @@
-const apiUrl = "http://localhost/wordpress/wp-json/wp/v2/posts";
+const apiUrl =
+  "https://public-api.wordpress.com/wp/v2/sites/milagrorebolledo.wordpress.com/posts";
 
 function extractTextFromHTML(htmlString) {
   const parser = new DOMParser();
@@ -15,13 +16,13 @@ async function fetchPosts(apiUrl) {
     // Process the array of posts and store them in a variable
     const allPosts = await Promise.all(
       posts.map(async (post) => {
-        const imageUrlResponse = await axios.get(
-          post._links["wp:attachment"][0].href
-        );
-        const imageUrl = imageUrlResponse.data[0].source_url;
+        // const imageUrlResponse = await axios.get(
+        //   post._links["wp:attachment"][0].href
+        // );
+        // const imageUrl = imageUrlResponse.data[0].source_url;
 
         const categoryResponse = await axios.get(
-          `http://localhost/wordpress/wp-json/wp/v2/posts/${post.id}/?_embed&categories`
+          `https://public-api.wordpress.com/wp/v2/sites/milagrorebolledo.wordpress.com/posts/${post.id}/?_embed&categories`
         );
 
         console.log(categoryResponse);
@@ -33,7 +34,7 @@ async function fetchPosts(apiUrl) {
         return {
           id: post.id,
           href: post.link,
-          imageUrl: imageUrl,
+          imageUrl: post.jetpack_featured_media_url,
           specialTitle: category, // You can customize this as needed
           title: post.title.rendered,
           subtitle: extractTextFromHTML(post.excerpt.rendered), // You can customize this as needed
