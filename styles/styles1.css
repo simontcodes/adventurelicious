@@ -135,7 +135,7 @@
     var(--lighter-gray) 33%
   );
 }
-[data-theme="dark"],
+/* [data-theme="dark"],
 body.dark-theme {
   --bg: #1d1f26;
   --bg-secondary: #262931;
@@ -160,8 +160,8 @@ body.dark-theme {
   --toc-number: #b38d12;
   --new-gradient: linear-gradient(to bottom right, #737373, #434343);
   --diagonal-line: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1367 172.7'%3E%3Cpath d='M1367 172.7v-14.6C385.1 158.1 0 0 0 0v172.7z' fill='%231d1f26'/%3E%3C/svg%3E");
-  --small-diagonal-line: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1183 42.14'%3E%3Cpath fill='%231d1f26' d='M0,0S535,78.49,1183,0V42.14H0Z'/%3E%3C/svg%3E%0A");
-}
+  --small-diagonal-line: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1183 42.14'%3E%3Cpath fill='%231d1f26' d='M0,0S535,78.49,1183,0V42.14H0Z'/%3E%3C/svg%3E%0A"); */
+/* } */
 body {
   color: var(--text-color);
   font-size: 20px;
