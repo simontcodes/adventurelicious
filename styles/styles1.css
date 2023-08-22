@@ -2444,7 +2444,7 @@ body .welcome-section .headers .new-me .portrait {
   top: 0;
   position: absolute;
   width: 100%;
-  transform: translateX(-40%) translateY(3%);
+  transform: translateX(-45%) translateY(3%);
   text-align: center;
   max-width: 1000px;
   min-width: 700px;
