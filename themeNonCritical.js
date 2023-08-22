@@ -10039,31 +10039,31 @@ var makeEverythingStickyInit = function () {
           });
         });
   },
-  darkModeSwtich = function () {
-    if (document.querySelector(".btn-darkmode"))
-      return (document.querySelector(".btn-darkmode").onclick = function () {
-        return (
-          "dark" === document.documentElement.getAttribute("data-theme")
-            ? (document.documentElement.setAttribute("data-theme", "light"),
-              localStorage.setItem("theme", "light"),
-              gtag("event", "GA4: Switch to Light Mode", {
-                event_category: "General",
-                event_label: document.title,
-                event_page: window.location.pathname,
-                event_content: document.title.substring(0, 150),
-              }))
-            : (document.documentElement.setAttribute("data-theme", "dark"),
-              localStorage.setItem("theme", "dark"),
-              gtag("event", "GA4: Switch to Dark Mode", {
-                event_category: "General",
-                event_label: document.title,
-                event_page: window.location.pathname,
-                event_content: document.title.substring(0, 150),
-              })),
-          !1
-        );
-      });
-  },
+  // darkModeSwtich = function () {
+  //   if (document.querySelector(".btn-darkmode"))
+  //     return (document.querySelector(".btn-darkmode").onclick = function () {
+  //       return (
+  //         "dark" === document.documentElement.getAttribute("data-theme")
+  //           ? (document.documentElement.setAttribute("data-theme", "light"),
+  //             localStorage.setItem("theme", "light"),
+  //             gtag("event", "GA4: Switch to Light Mode", {
+  //               event_category: "General",
+  //               event_label: document.title,
+  //               event_page: window.location.pathname,
+  //               event_content: document.title.substring(0, 150),
+  //             }))
+  //           : (document.documentElement.setAttribute("data-theme", "dark"),
+  //             localStorage.setItem("theme", "dark"),
+  //             gtag("event", "GA4: Switch to Dark Mode", {
+  //               event_category: "General",
+  //               event_label: document.title,
+  //               event_page: window.location.pathname,
+  //               event_content: document.title.substring(0, 150),
+  //             })),
+  //         !1
+  //       );
+  //     });
+  // },
   addAdTag = function () {
     var e;
     document.getElementById("mediavine-script") ||
@@ -10463,7 +10463,7 @@ var makeEverythingStickyInit = function () {
     playPauseAudio,
     loadHDImageInPost,
     beforeAfter,
-    darkModeSwtich,
+    // darkModeSwtich,
     trackingEventPosts,
     addNewDotInDropdown,
     initHotJar,
