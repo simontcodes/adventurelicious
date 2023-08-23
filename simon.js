@@ -13,6 +13,8 @@ async function fetchPosts(apiUrl) {
     const posts = response.data;
     console.log(posts);
 
+    posts.pop();
+
     // Process the array of posts and store them in a variable
     const allPosts = await Promise.all(
       posts.map(async (post) => {

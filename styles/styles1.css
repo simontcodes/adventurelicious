@@ -234,14 +234,46 @@ body #content > .container {
   padding-right: 15px;
   position: relative;
 }
-.row {
+.my-story {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  height: 44vh;
 }
+.my-story-left {
+  width: 40%;
+}
+.my-story-left img {
+  height: 100%;
+}
+.my-story-right {
+  width: 60%;
+}
+.my-story-right img {
+  height: 100%;
+}
+.my-story-btn {
+  position: relative;
+  top: -10%;
+  right: -55%;
+  width: 10rem;
+  font-size: small;
+  border-radius: 15px;
+  border: 1px, solid, var(--btn-hover);
+  background-color: var(--btn-hover);
+  color: var(--bg-secondary);
+  height: 32px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.my-story-btn:hover {
+  background-color: var(--bg-darker);
+  color: var(--text-color);
+}
+
+/* .my-story-right img {
+  height: 70%;
+} */
 .col-md-1,
 .col-md-2,
 .col-md-3,
